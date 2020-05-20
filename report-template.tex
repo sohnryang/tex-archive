@@ -1,0 +1,22 @@
+% TODO: Use medium weights in section font
+\documentclass{scrartcl}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage[margin=0.5in]{geometry}
+
+\setmainfont{Noto Serif CJK KR}
+\newfontfamily\sectionfont{Noto Sans CJK KR}
+\addtokomafont{section}{\sectionfont}
+\addtokomafont{subsection}{\sectionfont}
+\addtokomafont{subsubsection}{\sectionfont}
+\addtokomafont{title}{\sectionfont}
+\addtokomafont{author}{\sectionfont}
+\title{Insert Title Here}
+\author{Insert Author Here}
+\date{}
+
+\begin{document}
+\maketitle
+
+Some text
+\end{document}
