@@ -1,11 +1,15 @@
 \documentclass{scrartcl}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{fontspec}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{mathrsfs}
+\usepackage{mathtools}
 \usepackage{pgf,tikz,pgfplots}
+\usepackage{wrapfig}
 
 \hypersetup{
     colorlinks=true,
@@ -14,6 +18,7 @@
 }
 \pgfplotsset{compat=1.15}
 \usetikzlibrary{arrows}
+\newtheorem{theorem}{Theorem}
 
 \setmainfont{Noto Serif CJK KR}
 \setsansfont{Noto Sans CJK KR}
@@ -40,6 +45,7 @@
 \vdots & \vdots & \ddots & \vdots \\
 #1_{#2 1} & #1_{#2 2} & \cdots & #1_{#2#3} \\
 \end{pmatrix}}
+\newcommand{\un}[1]{\ensuremath{\ \mathrm{#1}}}
 
 \begin{document}
 \maketitle
